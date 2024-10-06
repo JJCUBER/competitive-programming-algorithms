@@ -1,4 +1,5 @@
 // TODO: this code still needs to be properly tested
+// TODO: try to reduce copies a bit more (useful reference: https://en.cppreference.com/w/cpp/language/copy_elision )
 
 #include "All.h"
 
@@ -81,31 +82,36 @@ struct Poly
     Poly operator*(ld scale)
     {
         Poly res = *this;
-        return res *= scale;
+        res *= scale;
+        return res;
     }
 
     Poly operator<<(int expo)
     {
         Poly res = *this;
-        return res <<= expo;
+        res <<= expo;
+        return res;
     }
 
     Poly operator>>(int expo)
     {
         Poly res = *this;
-        return res >>= expo;
+        res >>= expo;
+        return res;
     }
 
     Poly operator+(Poly p)
     {
         Poly res = *this;
-        return res += p;
+        res += p;
+        return res;
     }
 
     Poly operator-(Poly p)
     {
         Poly res = *this;
-        return res -= p;
+        res -= p;
+        return res;
     }
 
 private:
