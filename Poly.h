@@ -96,13 +96,13 @@ struct Poly
         return res >>= expo;
     }
 
-    Poly operator+(const Poly& p)
+    Poly operator+(Poly p)
     {
         Poly res = *this;
         return res += p;
     }
 
-    Poly operator-(const Poly& p)
+    Poly operator-(Poly p)
     {
         Poly res = *this;
         return res -= p;
