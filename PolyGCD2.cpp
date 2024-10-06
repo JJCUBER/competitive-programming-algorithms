@@ -2,6 +2,7 @@
 
 #include "All.h"
 
+// TODO - could start using Poly class
 using Poly = vd;
 
 // https://en.wikipedia.org/wiki/Polynomial_greatest_common_divisor#Properties
