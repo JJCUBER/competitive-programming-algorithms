@@ -102,16 +102,15 @@ struct Poly
 
     Poly operator+(Poly p)
     {
-        Poly res = *this;
-        res += p;
-        return res;
+        p += *this;
+        return p;
     }
 
     Poly operator-(Poly p)
     {
-        Poly res = *this;
-        res -= p;
-        return res;
+        p *= -1;
+        p += *this;
+        return p;
     }
 
 private:
