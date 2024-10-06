@@ -1,10 +1,8 @@
 // TODO: need to determine whether it is better (for precision) to make leading coefficients small at each step (and/or scale everything up/down by a certain amount)
 
-#include <bits/stdc++.h>
-using namespace std;
-using ld = long double;
-using Poly = vector<ld>;
-constexpr ld EPS = 1e-9;
+#include "All.h"
+
+using Poly = vd;
 
 // https://en.wikipedia.org/wiki/Polynomial_greatest_common_divisor#Properties
 
